@@ -128,8 +128,7 @@ void app_main(void)
     Touch_init();
     periodic_task_init();
 
-    // avoid touch test
-    set_nfc_state(1);
+    set_nfc_state(0);
 
     usb_device_init();
     usb_driver_install();
