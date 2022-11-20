@@ -38,7 +38,11 @@ idf.py menuconfig
 You shall config the program i such a way:
 > In `Partition Table` you should select `Custom Partition Table CSV`
 
-4. Build and flash
+4. Set the PIN
+
+You should go to `device-config.h` file and change the `LED_GPIO_PIN` and `TOUCH-CHANNAL` to your own board value.
+
+5. Build and flash
 ```powershell
 idf.py build
 idf.py -p COMx flash
