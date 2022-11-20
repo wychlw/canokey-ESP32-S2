@@ -24,6 +24,7 @@ This CanoKey-ESP32-S2 implementation is based on ESP32-S2-FH2 MCU, which feature
 # Build
 *I assume you are using Windows env, But Linux works in the same way.*
 
+
 1. Download this repo
 
 2. Setup the ESP-IDF environment
@@ -44,3 +45,6 @@ idf.py -p COMx flash
 ```
 
 You shall change the COM port to the actual COM port.
+
+## Notice
+You may found that CC1 treats all warning as errors, you may need to add some initial value to the var in canokey-core submodule.
